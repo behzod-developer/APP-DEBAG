@@ -1,0 +1,130 @@
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contact-line {
+    height: 30px;
+    background-color: lightcyan;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-phone,
+.header-mail {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    justify-content: center;
+    font-size: 14px;
+    margin-right: 50px;
+}
+
+.header-mail .icon,
+.header-phone .icon {
+    font-size: 20px;
+}
+
+/* navbar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 50px;
+}
+
+nav h1 {
+    font-size: 30px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul a {
+    padding: 12px 14px;
+    font-size: 20px;
+}
+
+nav ul .nav-btn-1 {
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    background-color: #6c63ff;
+    color: white;
+    font-weight: 700;
+}
+
+nav ul .nav-btn-2{
+    width: 170px;
+    height: 40px;
+    border: 2px solid #6c63ff;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #6c63ff;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-container {
+    height: 87.6vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(226, 253, 253, 0.547); */
+}
+
+.header-container .header-image img{
+    width: 700px;
+}
+
+.header-container .header-text{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.header-container .header-text > h1{
+font-size: 60px;
+font-weight: 800;
+}
+
+.header-container .header-text > p{
+    font-size: 18px;
+}
+
+.header-container .header-text > button{
+    width: 200px;
+    height: 60px;
+    background-color: #6c63ff;
+    color: white;
+    border-radius: 15px;
+    font-size: 20px;
+    border: none;
+    box-shadow: none;
+    font-weight: 600;
+}

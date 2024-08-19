@@ -1,0 +1,25 @@
+.about-container{
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    align-items: center;
+    margin:50px 0;
+    width: 100%;
+}
+
+.about-container .about-banner{
+    width:30%;
+}
+
+.about-container .about-text{
+    width: 40%;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-container .about-text h1{
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+}
