@@ -1,0 +1,1 @@
+export const home = `http://3.75.248.9/home/`

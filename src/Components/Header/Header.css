@@ -8,7 +8,7 @@ header {
 
 .contact-line {
     height: 30px;
-    background-color: lightcyan;
+    background-color: #F5F7FA;
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -48,7 +48,7 @@ nav ul {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 70%;
+    width: 60%;
 }
 
 nav a {
@@ -57,7 +57,7 @@ nav a {
 }
 
 nav ul a {
-    padding: 12px 14px;
+    padding: 12px 10px;
     font-size: 20px;
 }
 
@@ -67,18 +67,18 @@ nav ul .nav-btn-1 {
     font-size: 16px;
     border-radius: 10px;
     border: none;
-    background-color: #6c63ff;
+    background-color: #1565c0;
     color: white;
     font-weight: 700;
 }
 
-nav ul .nav-btn-2{
+nav ul .nav-btn-2 {
     width: 170px;
     height: 40px;
-    border: 2px solid #6c63ff;
+    border: 2px solid #1565c0;
     border-radius: 10px;
     background-color: transparent;
-    color: #6c63ff;
+    color: #1565c0;
     font-weight: 700;
     font-size: 16px;
 }
@@ -88,39 +88,49 @@ nav ul .nav-btn-2{
     align-items: center;
 }
 
+/* header container */
+
 .header-container {
     height: 87.6vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: rgba(226, 253, 253, 0.547); */
+    gap: 80px;
+    background-color: #F5F7FA;
 }
 
-.header-container .header-image img{
-    width: 700px;
+.header-container .header-image img {
+    width: 400px;
 }
 
-.header-container .header-text{
-    width: 600px;
+.header-container .header-text {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.header-container .header-text > h1{
-font-size: 60px;
-font-weight: 800;
+.header-container .header-text>h1 {
+    font-size: 60px;
+    font-weight: 800;
+    color: #4D4D4D;
 }
 
-.header-container .header-text > p{
-    font-size: 18px;
+.header-container .header-text h1 >span {
+    font-size: 60px;
+    font-weight: 800;
+    color: #1565c0;
 }
 
-.header-container .header-text > button{
+.header-container .header-text>p {
+    font-size: 14px;
+    color: #717171;
+}
+
+.header-container .header-text>button {
     width: 200px;
     height: 60px;
-    background-color: #6c63ff;
+    background-color: #1565c0;
     color: white;
     border-radius: 15px;
     font-size: 20px;

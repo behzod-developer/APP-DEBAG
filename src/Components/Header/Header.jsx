@@ -3,8 +3,7 @@ import Navbar from './Navbar/Navbar'
 import './Header.css'
 import { IoCall } from "react-icons/io5";
 import { IoIosMail } from "react-icons/io";
-import axios from 'axios';
-import Banner from '../../Container/Banner/Banner';
+import header_image from '../../assets/header_image.png'
 
 function Header() {
 
@@ -25,12 +24,15 @@ function Header() {
             <Navbar />
             <div className="header-container">
                 <div className="header-text">
-                    <h1>Looking For Inspiration</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus odit nihil ullam nesciunt quidem iste, Repellendus odit nihil</p>
-                    <button>Kirish</button>
+                    <h1>
+                        Lessons and insights <br />
+                        <span> from 8 years</span>
+                    </h1>
+                    <p>Where to grow your business as a photographer: site or social media?</p>
+                    <button>Ro'yxatdan o'tish</button>
                 </div>
                 <div className="header-image">
-                    <img src="https://i.postimg.cc/65QxYYzh/001234.png" alt="" />
+                    <img src={header_image} alt="" />
                 </div>
             </div>
         </header>

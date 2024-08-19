@@ -1,25 +1,109 @@
 .about-container{
-    display: flex;
-    justify-content: space-around;
-    gap: 50px;
-    align-items: center;
-    margin:50px 0;
     width: 100%;
-}
-
-.about-container .about-banner{
-    width:30%;
-}
-
-.about-container .about-text{
-    width: 40%;
+    margin-top: 50px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-title{
+    text-align: center;
+}
+
+.about-title h2{
+    font-size:35px;
+    padding: 10px 0;
+}
+
+.about-title p{
+    color: #717171;
+}
+
+.about-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 50px;
+    padding: 100px 0;
+}
+
+.about-child{
+    height: 300px;
+    width: 300px;
+    box-shadow: 1px 1px 3px 1px #E8F5E9;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 25px;
+    gap: 15px;
+    position: relative;
+}
+
+.about-child h4{
+    font-size: 28px;
+    position: absolute;
+    top: 100px;
+}
+
+.about-child .icon{
+    font-size: 50px;
+    background-color: #1565c0;
+    padding: 10px;
+    border-radius: 10px 5px;
+    color: white;
+    position: absolute;
+    top: 30px;
+}
+
+.about-child p{
+    color:#717171;
+    font-size: 15px;
+    position: absolute;
+    top: 180px;
+}
+
+/* second about css */
+
+/* .second-about-container{
+
+} */
+
+.second-about-parent{
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.about-container .about-text h1{
+.second-about-image img{
+    width: 500px;
+}
+
+.second-about-text{
+    width: 600px;
     display: flex;
-    align-items: center;
-    font-size: 50px;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.second-about-text h4{
+    font-size: 37px;
+    font-weight: 700;
+}
+
+.second-about-text p{
+    font-size:16px;
+    color: #717171;
+}
+
+.second-about-text .second-about-btn button{
+    padding: 12px 20px;
+    background-color: #1565c0;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    width: 150px;
 }
