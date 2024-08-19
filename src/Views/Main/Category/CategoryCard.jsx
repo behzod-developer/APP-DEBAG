@@ -2,7 +2,7 @@ import React from 'react'
 
 function CategoryCard({item}) {
   return (
-    <div>{item.name_uz}</div>
+    <div className='category-card'>{item.name_uz}</div>
   )
 }
 

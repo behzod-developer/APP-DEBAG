@@ -57,11 +57,10 @@ function Banner() {
               <Box
                 component="img"
                 sx={{
-                  height: 500,
+                  height: 800,
                   display:'block',
                   overflow: 'hidden',
                   width: '100%',
-                  maxWidth:600,
                   zIndex:22,
                 }}
                 src={step.image}

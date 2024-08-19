@@ -24,11 +24,11 @@ function Category() {
     console.log(landingCategory)
 
     return (
-        <div>
+        <div className='category-container'>
             <div className="category-parent">
 
                 <div className="category-title">
-                    <h3>Helping a local business reinvent itself</h3>
+                    <h3>Helping a local <br /> <span> business reinvent itself </span></h3>
                     <span>We reached here with our hard work and dedication</span>
                 </div>
 

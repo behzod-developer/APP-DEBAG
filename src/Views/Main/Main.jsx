@@ -15,8 +15,8 @@ function Main() {
             <Header />
             <About />
             <SecondAbout />
-<Category />
-            {/* <Banner /> */}
+            <Category />
+            <Banner />
         </div>
     )
 }
