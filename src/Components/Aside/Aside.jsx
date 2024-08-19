@@ -16,7 +16,7 @@ function Aside() {
             </div>
             <div className="aside-user">
                 <div className="aside-user-color">
-                    <img src='' alt="" />
+                    <img src='https://static.vecteezy.com/system/resources/thumbnails/000/439/863/small/Basic_Ui__28186_29.jpg' alt="" />
                     <div className="aside-user-title">
                         <h3>first namee <br /> last name</h3>
                         <span>ID:</span>
