@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     background-color: white;
     flex-direction: column;
     height: 55vh;
@@ -13,6 +14,16 @@
     font-size: 30px;
 }
 
+.register-container h2 {
+    position: absolute;
+    top: 70px;
+}
+
+.register-container form{
+    position: absolute;
+    top: 230px;
+}
+
 .login-container form {
     display: flex;
     flex-direction: column;
@@ -20,7 +31,7 @@
     justify-content: center;
     width: 300px;
     gap: 25px;
-    height: 35vh;
+    height: 30vh;
 }
 
 .login-container form>* {
@@ -34,7 +45,7 @@
     flex-direction: column;
 }
 
-.input span{
+.input span {
     font-size: 16px;
 }
 
@@ -47,7 +58,7 @@
     margin: 3px 0;
 }
 
-.login-input:focus{
+.login-input:focus {
     margin: 5px 0;
     transition: .3s ease;
 }
@@ -71,4 +82,13 @@
     background-color: royalblue;
     color: white;
     font-weight: 600;
+}
+
+.register-container {
+    height: 80vh;
+}
+
+.input-file input{
+    border: none;
+    font-size: 20px;
 }

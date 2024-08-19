@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import { singup } from '../../Database/auth';
 
 function SignUp() {
 
@@ -14,11 +15,17 @@ function SignUp() {
 
         async function postData() {
             try {
-                const response = await axios.post(sing_up, {
+                const response = await axios.post(singup, {
                     phone_number
                 });
                 console.log('Response:', response.data);
-                navigate('/dasshboard')
+                navigate('/verify-code')
+                const token = response.data.token;
+
+                // Tokenni localStorage yoki sessionStorage'ga saqlash
+                localStorage.setItem('token', token);
+            
+                console.log('Token saqlandi:', token);
             }
             catch (err) {
                 console.log('Error:', err);

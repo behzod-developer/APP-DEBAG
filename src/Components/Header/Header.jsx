@@ -10,7 +10,7 @@ function Header() {
 
 
     return (
-        <header>
+        <header className='landing-header'>
             <div className="contact-line">
                 <div className="header-phone">
                     <IoCall className='icon' />
