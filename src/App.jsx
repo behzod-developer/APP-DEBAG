@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import Login from './Views/Auth/Login';
 import Main from './Views/Main/Main';
 import { createContext, useState } from 'react';
+import SignUp from './Views/Auth/SignUp';
 
 
 export const Context = createContext()
@@ -14,7 +15,8 @@ const App = () => {
     <Context.Provider value={{ login, setLogin }}>
       <Routes>
 
-        <Route path="/login" element={<Login />} />
+        <Route path="login" element={<Login />} />
+        <Route path="singup" element={<SignUp />} />
         <Route path='/' element={<Main />} />
       </Routes>
     </Context.Provider>

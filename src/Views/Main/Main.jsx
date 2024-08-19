@@ -5,6 +5,7 @@ import About from './About/About'
 import Banner from '../../Container/Banner/Banner'
 import SecondAbout from './About/SecondAbout'
 import Category from './Category/Category'
+import Footer from '../../Components/Footer/Footer'
 
 
 
@@ -17,6 +18,7 @@ function Main() {
             <SecondAbout />
             <Category />
             <Banner />
+            <Footer />
         </div>
     )
 }

@@ -1,7 +1,17 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 
 function Navbar() {
+
+  const navigate = useNavigate()
+
+  function Login(){
+    navigate('/login')
+  }
+  function Singup(){
+    navigate('/singup')
+  }
+
   return (
     <nav>
         <NavLink className={'logo'}>
@@ -13,8 +23,8 @@ function Navbar() {
             <NavLink>About</NavLink>
             <NavLink>Service</NavLink>
             <NavLink>Contact</NavLink>
-            <button className='nav-btn-1'>Kirish</button>
-            <button className='nav-btn-2'>Ro'yxatdan o'tish</button>
+            <button onClick={Login} className='nav-btn-1'>Kirish</button>
+            <button onClick={Singup} className='nav-btn-2'>Ro'yxatdan o'tish</button>
         </ul>
     </nav>
   )

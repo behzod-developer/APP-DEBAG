@@ -1,27 +1,24 @@
-import React, { useState } from 'react'
-import './Auth.css'
 import axios from 'axios';
+import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
-import { login } from '../../Database/auth';
 
-function Login() {
+function SignUp() {
 
     const [phone_number, setPhoneNumber] = useState('')
-    const [password, setPassword] = useState('')
     const [error, setError] = useState(null);
 
     const navigate = useNavigate()
 
-    const addLoginHandlers = e => {
+    const addSignUpHandlers = e => {
         e.preventDefault()
 
         async function postData() {
             try {
-                const response = await axios.post(login, {
-                    phone_number, password
+                const response = await axios.post(sing_up, {
+                    phone_number
                 });
                 console.log('Response:', response.data);
-                navigate('/dashboard')
+                navigate('/dasshboard')
             }
             catch (err) {
                 console.log('Error:', err);
@@ -30,34 +27,19 @@ function Login() {
         }
         postData();
     }
-
-
-
-
     return (
         <div className='login'>
             <div className='login-container'>
-                <h2>Login</h2>
-                <form onSubmit={addLoginHandlers} action="">
+                <h2>Sign Up</h2>
+                <form onSubmit={addSignUpHandlers} action="">
                     <div className="input">
                         <span>Telefon raqam</span>
                         <input
                             className='login-input'
-                            type="text"
+                            type="tel"
                             value={phone_number}
                             placeholder='telefon raqam kiriting'
                             onChange={(e) => setPhoneNumber(e.target.value)}
-                            required
-                        />
-                    </div>
-                    <div className="input">
-                        <span>parol</span>
-                        <input
-                            className='login-input'
-                            type="password"
-                            value={password}
-                            placeholder='parolni kiriting'
-                            onChange={(e) => setPassword(e.target.value)}
                             required
                         />
                     </div>
@@ -69,4 +51,4 @@ function Login() {
     )
 }
 
-export default Login
+export default SignUp
