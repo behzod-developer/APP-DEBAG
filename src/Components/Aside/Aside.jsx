@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Aside.css'
 import { NavLink } from 'react-router-dom'
 import { MdInfoOutline } from "react-icons/md";
@@ -6,8 +6,15 @@ import { BsListTask } from "react-icons/bs";
 import { IoReorderFour } from "react-icons/io5";
 import { FaChartLine } from "react-icons/fa";
 import { MdOutlineBubbleChart } from "react-icons/md";
+import { Context } from '../../App';
 
 function Aside() {
+
+    const { data_user } = useContext(Context)
+
+    console.log(data_user)
+
+
     return (
         <div className='aside'>
             <div className="logo">
@@ -18,8 +25,8 @@ function Aside() {
                 <div className="aside-user-color">
                     <img src='https://static.vecteezy.com/system/resources/thumbnails/000/439/863/small/Basic_Ui__28186_29.jpg' alt="" />
                     <div className="aside-user-title">
-                        <h3>first namee <br /> last name</h3>
-                        <span>ID:</span>
+                        <h3>  first name last name</h3>
+                        <span className='id-number'>ID: <b> id_number </b></span>
                     </div>
                 </div>
             </div>

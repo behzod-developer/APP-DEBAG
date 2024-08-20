@@ -21,11 +21,25 @@
     align-items: center;
     height: 200px;
     width: 100%;
-    background-color: #abbed19f;
+    background-color: #4693e153;
     border-radius: 10px;
     padding: 10px 20px;
     margin: 10px;
     gap: 15px;
+}
+
+.id-number b{
+    background-color: rgba(34, 225, 235, 0.365);
+    padding: 5px 7px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.id-number{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .aside-user{
@@ -67,5 +81,5 @@
 }
 
 .actives{
-    color: blue!important;
+    color: rgba(195, 195, 252, 0.73)!important;
 }

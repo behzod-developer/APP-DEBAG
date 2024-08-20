@@ -14,8 +14,10 @@ const App = () => {
 
   const [login, setLogin] = useState(false)
 
+  const [data_user, setDataUser] = useState()
+
   return (
-    <Context.Provider value={{ login, setLogin }}>
+    <Context.Provider value={{ login, setLogin, data_user, setDataUser }}>
       <Routes>
 
         <Route path="login" element={<Login />} />

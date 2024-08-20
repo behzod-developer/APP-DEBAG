@@ -1,4 +1,4 @@
-const base = `http://192.168.137.30:8000`
+const base = `http://3.75.248.9`
 
 export const login = `${base}/auth1/login/`
 export const verify_code = `${base}/auth1/register/verify-code/`

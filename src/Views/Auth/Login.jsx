@@ -1,14 +1,16 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './Auth.css'
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { login } from '../../Database/auth';
+import { Context } from '../../App';
 
 function Login() {
 
     const [phone_number, setPhoneNumber] = useState('')
     const [password, setPassword] = useState('')
     const [error, setError] = useState(null);
+
 
     const navigate = useNavigate()
 
@@ -22,6 +24,15 @@ function Login() {
                 });
                 console.log('Response:', response.data);
                 navigate('/dashboard')
+                const user_data = response.data;
+
+                console.log('Succssessfull data', response.data)
+
+
+                // Tokenni localStorage yoki sessionStorage'ga saqlash
+                localStorage.setItem('user_data', JSON.stringify(user_data));
+
+                console.log('user data saqlandi:', user_data);
             }
             catch (err) {
                 console.log('Error:', err);
@@ -63,7 +74,7 @@ function Login() {
                     </div>
                     <button>Submit</button>
                 </form>
-                {error && <p style={{ color: 'red' }}>{error}</p>}
+                {error && <p className='error' style={{ color: 'red' }}>{error}</p>}
             </div>
         </div>
     )

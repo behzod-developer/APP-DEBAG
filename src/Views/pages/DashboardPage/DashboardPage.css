@@ -21,7 +21,23 @@
     height: 150px;
     border-radius: 20px;
     display: flex;
-    align-items: center;
+    padding-left: 30px;
     justify-content: center;
     flex-direction: column;
+    position: relative;
+}
+
+.dashboard-page-data-card h1{
+font-size:50px!important;
+padding: 10px;
+}
+
+.card-icon{
+    background-color: lightblue;
+    padding: 10px;
+    font-size:50px;
+    border-radius: 10px 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
